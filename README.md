@@ -1,17 +1,39 @@
-#Programación Orientada a Objetos II 🤓
+# Programación Orientada a Objetos II 🤓
 
-📌 Descripción
-Este es un proyecto en el cual se compilan las primeras sesiones de Programación Orientada a Objetos II. Encontrarás diferentes ejercicios relacionados con listas, collections, herencia, interfaces, lambdas, Enum e interfaces funcionales. 
+## 📌 Descripción
+Este es un proyecto en el cual se compilan las primeras sesiones de Programación Orientada a Objetos II. Encontrarás diferentes ejercicios relacionados con colecciones de Java como List, Set, Map y el manejo de conceptos como Herencia, Polimorfismo, Interfaces, Lambdas, Enum e Interfaces Funcionales. 
 
-📋 Requisitos
-Puedes trabajar en IDEs como NeatBeans o Eclipse.
+## 📋 Requisitos
+- Haber realizado el proyecto java_basico y poo-1.
+- Descargar e instalar cualquiera de los siguientes IDEs [NetBeans](https://platzi.com/tutoriales/1760-java-persistencia/7532-guia-para-la-instalacion-y-configuracion-de-netbeans121/) o [Eclipse](https://www.grupocodesi.com/blog/instalar-eclipse.html)
 
-📄 Contenido
+## 📄 Contenido
 - List
 - Enum
 - Collections.
-- Herencia y polimorfismo.
+- Herencia y Polimorfismo.
 - Lambdas e Interfaces Funcionales.
   
-✨ Autor
-Angie Amado - GitHub
+## 📜 Código de ejemplo
+
+```java
+
+  //Herencia y Polimorfismo
+public abstract class Profesion {
+	
+	private String nombre; //no se debe poder cambiar
+	private short anioDeNacimiento; //no se debe poder cambiar. Ningún método o proceso público que permita cambiarlo
+	private String especialidad;
+
+}
+
+public class Doctor extends Profesion {
+
+	public Doctor(String nombre, short anioDeNacimiento, String especialidad) {
+		super(nombre, anioDeNacimiento, especialidad);
+}
+
+```
+  
+## ✨ Autor
+- **Angie Amado** - [GitHub](https://github.com/angieah17)
