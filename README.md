@@ -14,15 +14,15 @@ Este es un proyecto en el cual se compilan las primeras sesiones de Programació
 - Herencia y Polimorfismo.
 - Lambdas e Interfaces Funcionales.
   
-## 📜 Código de ejemplo
+### 📜 Código de ejemplo
 
 ```java
 
-  //Herencia y Polimorfismo
+//Herencia y Polimorfismo
 public abstract class Profesion {
 	
-	private String nombre; //no se debe poder cambiar
-	private short anioDeNacimiento; //no se debe poder cambiar. Ningún método o proceso público que permita cambiarlo
+	private String nombre; 
+	private short anioDeNacimiento; 
 	private String especialidad;
 
 }
@@ -37,3 +37,4 @@ public class Doctor extends Profesion {
   
 ## ✨ Autor
 - **Angie Amado** - [GitHub](https://github.com/angieah17)
+![LogoJava](https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png)
