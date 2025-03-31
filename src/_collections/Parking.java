@@ -36,7 +36,7 @@ public class Parking {
 	// 3. Métodos privados
 
 	private boolean estaCocheDentro(Coche coche) {
-
+				
 		for (Coche c : listaDeCoches) {
 			if (c == coche) {
 				return true;
@@ -225,10 +225,12 @@ public class Parking {
 		parteInicialReports("LISTADO COCHES");
 
 		int plazasLibres = totalPlazas - listaDeCoches.size();
-
-		for (Coche coche : listaDeCoches) {
+		
+		listaDeCoches.forEach(x -> System.out.println(x));
+		
+		/*for (Coche coche : listaDeCoches) {
 			System.out.printf("  %s%n", coche);
-		}
+		}*/
 
 		System.out.printf("Total coches: %d, plazas libres:%d%n", listaDeCoches.size(), plazasLibres);
 
