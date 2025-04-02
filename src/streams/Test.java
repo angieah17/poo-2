@@ -126,6 +126,25 @@ public class Test {
 	    .filter(a -> a.getName().length() + a.getSurname().length() < 25)
 	    .forEach(a -> System.out.printf("Nombre: %s y Apellido: %s%n", a.getName(), a.getSurname()));
 	    
+	    // Obtener los apellidos únicos en mayúsculas de los 15 primeros autores
+	    //que sean 50 años o mayores
+	    
+	    System.out.println("STREAM EXAMPLES");
+	    
+	    System.out.println(library.stream()
+	    	.map(b -> b.getAuthor())
+	    	//.peek(a -> System.out.println("Todos los Autores " + a)) //lazy execution por eso necesita tener una operación terminal para mostrarse
+	    	.filter(a -> a.getAge() >= 50)
+	    	//.peek(a -> System.out.println("Autores mayores de 50 años o mayores: " + a)) 
+	    	.distinct()
+	    	.map(a -> a.getSurname())
+	    	.map(sur -> sur.toUpperCase())
+	    	.toList()) ;	    	
+	    	
+	    	
+	    	
+	    	
+	    
 	    
 	}
 
